@@ -1,0 +1,15 @@
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-tt_i1ed1 because the default path (/home/jovyan/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+23/04/13 08:41:18 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/04/13 08:41:28 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+/home/psw2i/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:474: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+  for column, series in pdf.iteritems():
+/home/psw2i/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:486: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+  for column, series in pdf.iteritems():
+23/04/13 08:41:36 WARN BlockManager: Block rdd_26_0 already exists on this machine; not re-adding it
+23/04/13 08:42:32 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+23/04/13 08:42:32 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+Decision Tree : 0.9430051813471503
+Random Forest : 0.9740932642487047
+ML perceptron : 0.927461139896373

@@ -1,0 +1,31 @@
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-2vx6m9c7 because the default path (/home/jovyan/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+23/04/13 08:41:23 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/04/13 08:41:24 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+23/04/13 08:41:24 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+23/04/13 08:41:24 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+23/04/13 08:41:24 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+23/04/13 08:41:24 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
+23/04/13 08:41:24 WARN Utils: Service 'SparkUI' could not bind on port 4045. Attempting port 4046.
+23/04/13 08:41:24 WARN Utils: Service 'SparkUI' could not bind on port 4046. Attempting port 4047.
+23/04/13 08:41:33 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+/home/psw2i/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:474: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+  for column, series in pdf.iteritems():
+/home/psw2i/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:486: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+  for column, series in pdf.iteritems():
+23/04/13 08:41:41 WARN BlockManager: Block rdd_26_0 already exists on this machine; not re-adding it
+23/04/13 08:42:35 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+23/04/13 08:42:35 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+23/04/13 08:43:30 WARN BlockManager: Asked to remove block broadcast_2028_piece0, which does not exist
+23/04/13 08:43:38 WARN BlockManager: Asked to remove block broadcast_2195, which does not exist
+23/04/13 08:43:39 WARN BlockManager: Asked to remove block broadcast_2223, which does not exist
+23/04/13 08:43:39 WARN BlockManager: Asked to remove block broadcast_2223_piece0, which does not exist
+23/04/13 08:44:11 WARN BlockManager: Asked to remove block rdd_3196_1, which does not exist
+23/04/13 08:44:15 WARN BlockManager: Asked to remove block broadcast_3062, which does not exist
+23/04/13 08:44:25 WARN BlockManager: Asked to remove block broadcast_3297_piece0, which does not exist
+23/04/13 08:44:52 WARN BlockManager: Asked to remove block broadcast_3889_piece0, which does not exist
+23/04/13 08:45:45 WARN BlockManager: Asked to remove block broadcast_5209, which does not exist
+Decision Tree : 0.9562841530054644
+Random Forest : 0.9726775956284153
+ML perceptron : 0.912568306010929

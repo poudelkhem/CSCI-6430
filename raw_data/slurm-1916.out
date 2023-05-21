@@ -1,0 +1,112 @@
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-57j70r4t because the default path (/home/jovyan/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+23/04/13 08:41:19 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/04/13 08:41:21 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+23/04/13 08:41:21 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+23/04/13 08:41:30 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+/home/psw2i/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:474: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+  for column, series in pdf.iteritems():
+/home/psw2i/.local/lib/python3.10/site-packages/pyspark/sql/pandas/conversion.py:486: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+  for column, series in pdf.iteritems():
+23/04/13 08:41:38 WARN BlockManager: Block rdd_26_0 already exists on this machine; not re-adding it
+23/04/13 08:42:34 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+23/04/13 08:42:34 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+23/04/13 08:44:13 WARN BlockManager: Block broadcast_2999_piece0 was not removed normally.
+23/04/13 08:44:13 ERROR BlockManagerStorageEndpoint: Error in removing broadcast 2999
+org.apache.spark.SparkException: Block broadcast_2999_piece0 does not exist
+	at org.apache.spark.errors.SparkCoreErrors$.blockDoesNotExistError(SparkCoreErrors.scala:234)
+	at org.apache.spark.storage.BlockInfoManager.blockInfo(BlockInfoManager.scala:237)
+	at org.apache.spark.storage.BlockInfoManager.removeBlock(BlockInfoManager.scala:500)
+	at org.apache.spark.storage.BlockManager.removeBlockInternal(BlockManager.scala:2011)
+	at org.apache.spark.storage.BlockManager.removeBlock(BlockManager.scala:1977)
+	at org.apache.spark.storage.BlockManager.$anonfun$removeBroadcast$3(BlockManager.scala:1963)
+	at org.apache.spark.storage.BlockManager.$anonfun$removeBroadcast$3$adapted(BlockManager.scala:1963)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at org.apache.spark.storage.BlockManager.removeBroadcast(BlockManager.scala:1963)
+	at org.apache.spark.storage.BlockManagerStorageEndpoint$$anonfun$receiveAndReply$1.$anonfun$applyOrElse$4(BlockManagerStorageEndpoint.scala:69)
+	at scala.runtime.java8.JFunction0$mcI$sp.apply(JFunction0$mcI$sp.java:23)
+	at org.apache.spark.storage.BlockManagerStorageEndpoint.$anonfun$doAsync$1(BlockManagerStorageEndpoint.scala:89)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+23/04/13 08:44:13 WARN BlockManagerMaster: Failed to remove broadcast 2999 with removeFromMaster = true - Block broadcast_2999_piece0 does not exist
+org.apache.spark.SparkException: Block broadcast_2999_piece0 does not exist
+	at org.apache.spark.errors.SparkCoreErrors$.blockDoesNotExistError(SparkCoreErrors.scala:234)
+	at org.apache.spark.storage.BlockInfoManager.blockInfo(BlockInfoManager.scala:237)
+	at org.apache.spark.storage.BlockInfoManager.removeBlock(BlockInfoManager.scala:500)
+	at org.apache.spark.storage.BlockManager.removeBlockInternal(BlockManager.scala:2011)
+	at org.apache.spark.storage.BlockManager.removeBlock(BlockManager.scala:1977)
+	at org.apache.spark.storage.BlockManager.$anonfun$removeBroadcast$3(BlockManager.scala:1963)
+	at org.apache.spark.storage.BlockManager.$anonfun$removeBroadcast$3$adapted(BlockManager.scala:1963)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at org.apache.spark.storage.BlockManager.removeBroadcast(BlockManager.scala:1963)
+	at org.apache.spark.storage.BlockManagerStorageEndpoint$$anonfun$receiveAndReply$1.$anonfun$applyOrElse$4(BlockManagerStorageEndpoint.scala:69)
+	at scala.runtime.java8.JFunction0$mcI$sp.apply(JFunction0$mcI$sp.java:23)
+	at org.apache.spark.storage.BlockManagerStorageEndpoint.$anonfun$doAsync$1(BlockManagerStorageEndpoint.scala:89)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+23/04/13 08:44:13 ERROR ContextCleaner: Error cleaning broadcast 2999
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:301)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	at org.apache.spark.storage.BlockManagerMaster.removeBroadcast(BlockManagerMaster.scala:209)
+	at org.apache.spark.broadcast.TorrentBroadcast$.unpersist(TorrentBroadcast.scala:351)
+	at org.apache.spark.broadcast.TorrentBroadcastFactory.unbroadcast(TorrentBroadcastFactory.scala:45)
+	at org.apache.spark.broadcast.BroadcastManager.unbroadcast(BroadcastManager.scala:79)
+	at org.apache.spark.ContextCleaner.doCleanupBroadcast(ContextCleaner.scala:256)
+	at org.apache.spark.ContextCleaner.$anonfun$keepCleaning$3(ContextCleaner.scala:204)
+	at org.apache.spark.ContextCleaner.$anonfun$keepCleaning$3$adapted(ContextCleaner.scala:195)
+	at scala.Option.foreach(Option.scala:407)
+	at org.apache.spark.ContextCleaner.$anonfun$keepCleaning$1(ContextCleaner.scala:195)
+	at org.apache.spark.util.Utils$.tryOrStopSparkContext(Utils.scala:1446)
+	at org.apache.spark.ContextCleaner.org$apache$spark$ContextCleaner$$keepCleaning(ContextCleaner.scala:189)
+	at org.apache.spark.ContextCleaner$$anon$1.run(ContextCleaner.scala:79)
+Caused by: org.apache.spark.SparkException: Block broadcast_2999_piece0 does not exist
+	at org.apache.spark.errors.SparkCoreErrors$.blockDoesNotExistError(SparkCoreErrors.scala:234)
+	at org.apache.spark.storage.BlockInfoManager.blockInfo(BlockInfoManager.scala:237)
+	at org.apache.spark.storage.BlockInfoManager.removeBlock(BlockInfoManager.scala:500)
+	at org.apache.spark.storage.BlockManager.removeBlockInternal(BlockManager.scala:2011)
+	at org.apache.spark.storage.BlockManager.removeBlock(BlockManager.scala:1977)
+	at org.apache.spark.storage.BlockManager.$anonfun$removeBroadcast$3(BlockManager.scala:1963)
+	at org.apache.spark.storage.BlockManager.$anonfun$removeBroadcast$3$adapted(BlockManager.scala:1963)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at org.apache.spark.storage.BlockManager.removeBroadcast(BlockManager.scala:1963)
+	at org.apache.spark.storage.BlockManagerStorageEndpoint$$anonfun$receiveAndReply$1.$anonfun$applyOrElse$4(BlockManagerStorageEndpoint.scala:69)
+	at scala.runtime.java8.JFunction0$mcI$sp.apply(JFunction0$mcI$sp.java:23)
+	at org.apache.spark.storage.BlockManagerStorageEndpoint.$anonfun$doAsync$1(BlockManagerStorageEndpoint.scala:89)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+23/04/13 08:45:05 WARN BlockManager: Asked to remove block broadcast_4286, which does not exist
+Decision Tree : 0.9406392694063926
+Random Forest : 0.9497716894977168
+ML perceptron : 0.9315068493150684
